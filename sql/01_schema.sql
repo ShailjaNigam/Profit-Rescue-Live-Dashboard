@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS profit_rescue_db; USE profit_rescue_db;
+DROP TABLE IF EXISTS returns; DROP TABLE IF EXISTS inventory_snapshots; DROP TABLE IF EXISTS sales_order_items; DROP TABLE IF EXISTS sales_orders; DROP TABLE IF EXISTS sales_targets; DROP TABLE IF EXISTS products; DROP TABLE IF EXISTS customers;
+CREATE TABLE customers(customer_id VARCHAR(10) PRIMARY KEY,customer_name VARCHAR(100),city VARCHAR(50),segment VARCHAR(30),registration_date DATE);
+CREATE TABLE products(product_id VARCHAR(10) PRIMARY KEY,product_name VARCHAR(50),category VARCHAR(50),unit_cost DECIMAL(12,2),selling_price DECIMAL(12,2));
+CREATE TABLE sales_orders(order_id VARCHAR(10) PRIMARY KEY,customer_id VARCHAR(10),order_date DATE,region VARCHAR(20),salesperson VARCHAR(50),FOREIGN KEY(customer_id) REFERENCES customers(customer_id));
+CREATE TABLE sales_order_items(order_item_id VARCHAR(10) PRIMARY KEY,order_id VARCHAR(10),product_id VARCHAR(10),quantity INT,discount_rate DECIMAL(6,4),unit_price DECIMAL(12,2),unit_cost DECIMAL(12,2),gross_sales DECIMAL(14,2),discount_amount DECIMAL(14,2),revenue DECIMAL(14,2),cost DECIMAL(14,2),profit DECIMAL(14,2),FOREIGN KEY(order_id) REFERENCES sales_orders(order_id),FOREIGN KEY(product_id) REFERENCES products(product_id));
+CREATE TABLE inventory_snapshots(snapshot_id VARCHAR(12) PRIMARY KEY,snapshot_date DATE,product_id VARCHAR(10),stock_on_hand INT,reorder_level INT,FOREIGN KEY(product_id) REFERENCES products(product_id));
+CREATE TABLE returns(return_id VARCHAR(10) PRIMARY KEY,order_item_id VARCHAR(10),return_date DATE,quantity_returned INT,refund_amount DECIMAL(14,2),return_reason VARCHAR(50),FOREIGN KEY(order_item_id) REFERENCES sales_order_items(order_item_id));
+CREATE TABLE sales_targets(target_month DATE,region VARCHAR(20),target_revenue DECIMAL(14,2),PRIMARY KEY(target_month,region));

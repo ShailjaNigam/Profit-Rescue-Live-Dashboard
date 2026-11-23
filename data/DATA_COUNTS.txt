@@ -1,0 +1,8 @@
+Lists: 20 rows x 8 columns
+Customers: 500 rows x 5 columns
+Products: 100 rows x 5 columns
+Sales_Orders: 3000 rows x 5 columns
+Sales_Order_Items: 6000 rows x 12 columns
+Inventory_Snapshots: 2400 rows x 5 columns
+Returns: 200 rows x 6 columns
+Sales_Targets: 120 rows x 3 columns

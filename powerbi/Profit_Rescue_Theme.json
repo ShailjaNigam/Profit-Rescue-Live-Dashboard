@@ -1,0 +1,15 @@
+{
+  "name": "Profit Rescue",
+  "dataColors": [
+    "#2563eb",
+    "#0f766e",
+    "#f59e0b",
+    "#dc2626",
+    "#7c3aed",
+    "#64748b",
+    "#db2777"
+  ],
+  "background": "#f8fafc",
+  "foreground": "#172033",
+  "tableAccent": "#2563eb"
+}

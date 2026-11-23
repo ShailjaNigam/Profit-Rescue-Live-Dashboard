@@ -1,0 +1,9 @@
+USE profit_rescue_db;
+-- CSVs are in the data folder. Run with LOCAL INFILE enabled; update paths to absolute paths if needed.
+LOAD DATA LOCAL INFILE 'data/Customers.csv' INTO TABLE customers FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\\n' IGNORE 1 ROWS (customer_id,customer_name,city,segment,@d) SET registration_date=STR_TO_DATE(@d,'%Y-%m-%d');
+LOAD DATA LOCAL INFILE 'data/Products.csv' INTO TABLE products FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\\n' IGNORE 1 ROWS;
+LOAD DATA LOCAL INFILE 'data/Sales_Orders.csv' INTO TABLE sales_orders FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\\n' IGNORE 1 ROWS (order_id,customer_id,@d,region,salesperson) SET order_date=STR_TO_DATE(@d,'%Y-%m-%d');
+LOAD DATA LOCAL INFILE 'data/Sales_Order_Items.csv' INTO TABLE sales_order_items FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\\n' IGNORE 1 ROWS;
+LOAD DATA LOCAL INFILE 'data/Inventory_Snapshots.csv' INTO TABLE inventory_snapshots FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\\n' IGNORE 1 ROWS (snapshot_id,@d,product_id,stock_on_hand,reorder_level) SET snapshot_date=STR_TO_DATE(@d,'%Y-%m-%d');
+LOAD DATA LOCAL INFILE 'data/Returns.csv' INTO TABLE returns FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\\n' IGNORE 1 ROWS (return_id,order_item_id,@d,quantity_returned,refund_amount,return_reason) SET return_date=STR_TO_DATE(@d,'%Y-%m-%d');
+LOAD DATA LOCAL INFILE 'data/Sales_Targets.csv' INTO TABLE sales_targets FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\\n' IGNORE 1 ROWS (@d,region,target_revenue) SET target_month=STR_TO_DATE(@d,'%Y-%m-%d');

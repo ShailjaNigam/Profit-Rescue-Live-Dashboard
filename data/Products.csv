@@ -1,0 +1,101 @@
+Product_ID,Product_Name,Category,Unit_Cost,Selling_Price
+P0001,Laptop,Electronics,10505,12816.1
+P0002,Monitor,Electronics,6988,13626.6
+P0003,Keyboard,Electronics,4924,8370.8
+P0004,Mouse,Electronics,2721,4299.18
+P0005,Printer,Electronics,5523,10604.16
+P0006,Desk,Electronics,8079,15511.68
+P0007,Chair,Electronics,12951,24477.39
+P0008,Cabinet,Electronics,11070,18708.3
+P0009,Notebook,Electronics,4785,6220.5
+P0010,Pen,Electronics,16609,27238.76
+P0011,Refrigerator,Electronics,1959,2585.88
+P0012,Microwave,Electronics,14522,21637.78
+P0013,Blender,Electronics,2690,4384.7
+P0014,Toaster,Electronics,19716,33517.2
+P0015,Headphones,Electronics,10894,13399.62
+P0016,Webcam,Electronics,9156,16206.12
+P0017,Router,Electronics,16276,24251.24
+P0018,Tablet,Electronics,11859,22532.1
+P0019,Scanner,Electronics,12501,21876.75
+P0020,Speaker,Electronics,6286,12194.84
+P0021,Laptop,Furniture,12654,16450.2
+P0022,Monitor,Furniture,9878,14915.78
+P0023,Keyboard,Furniture,2608,3390.4
+P0024,Mouse,Furniture,8980,12482.2
+P0025,Printer,Furniture,12651,17584.89
+P0026,Desk,Furniture,12967,20747.2
+P0027,Chair,Furniture,12019,15985.27
+P0028,Cabinet,Furniture,3198,3837.6
+P0029,Notebook,Furniture,10301,18129.76
+P0030,Pen,Furniture,11993,18469.22
+P0031,Refrigerator,Furniture,3549,4826.64
+P0032,Microwave,Furniture,3060,4375.8
+P0033,Blender,Furniture,14322,25349.94
+P0034,Toaster,Furniture,18451,35241.41
+P0035,Headphones,Furniture,16991,29224.52
+P0036,Webcam,Furniture,3584,4408.32
+P0037,Router,Furniture,3136,5174.4
+P0038,Tablet,Furniture,18360,24051.6
+P0039,Scanner,Furniture,19760,38729.6
+P0040,Speaker,Furniture,10830,18302.7
+P0041,Laptop,Office Supplies,604,948.28
+P0042,Monitor,Office Supplies,13759,23252.71
+P0043,Keyboard,Office Supplies,2975,5682.25
+P0044,Mouse,Office Supplies,8154,15737.22
+P0045,Printer,Office Supplies,17275,24357.75
+P0046,Desk,Office Supplies,12675,17871.75
+P0047,Chair,Office Supplies,4749,7313.46
+P0048,Cabinet,Office Supplies,10067,15503.18
+P0049,Notebook,Office Supplies,16358,22574.04
+P0050,Pen,Office Supplies,2273,3204.93
+P0051,Refrigerator,Office Supplies,14443,22386.65
+P0052,Microwave,Office Supplies,13998,22116.84
+P0053,Blender,Office Supplies,16067,20726.43
+P0054,Toaster,Office Supplies,12033,18290.16
+P0055,Headphones,Office Supplies,8280,16560.0
+P0056,Webcam,Office Supplies,16446,32234.16
+P0057,Router,Office Supplies,6607,11760.46
+P0058,Tablet,Office Supplies,3705,5075.85
+P0059,Scanner,Office Supplies,10183,12219.6
+P0060,Speaker,Office Supplies,13166,21328.92
+P0061,Laptop,Appliances,12648,20489.76
+P0062,Monitor,Appliances,14625,23692.5
+P0063,Keyboard,Appliances,14310,28047.6
+P0064,Mouse,Appliances,4660,7362.8
+P0065,Printer,Appliances,10707,21092.79
+P0066,Desk,Appliances,6781,12273.61
+P0067,Chair,Appliances,10495,14902.9
+P0068,Cabinet,Appliances,13249,21198.4
+P0069,Notebook,Appliances,9750,17745.0
+P0070,Pen,Appliances,19070,28795.7
+P0071,Refrigerator,Appliances,10878,18275.04
+P0072,Microwave,Appliances,9384,15952.8
+P0073,Blender,Appliances,12160,16294.4
+P0074,Toaster,Appliances,18676,27080.2
+P0075,Headphones,Appliances,19606,37055.34
+P0076,Webcam,Appliances,6095,11580.5
+P0077,Router,Appliances,1081,1934.99
+P0078,Tablet,Appliances,7069,12441.44
+P0079,Scanner,Appliances,9746,12474.88
+P0080,Speaker,Appliances,13606,24898.98
+P0081,Laptop,Accessories,4760,7520.8
+P0082,Monitor,Accessories,8130,12357.6
+P0083,Keyboard,Accessories,5250,9135.0
+P0084,Mouse,Accessories,12553,16193.37
+P0085,Printer,Accessories,14915,29233.4
+P0086,Desk,Accessories,15903,30851.82
+P0087,Chair,Accessories,13333,25066.04
+P0088,Cabinet,Accessories,16800,29064.0
+P0089,Notebook,Accessories,18014,22337.36
+P0090,Pen,Accessories,11981,22524.28
+P0091,Refrigerator,Accessories,19658,25555.4
+P0092,Microwave,Accessories,3783,5712.33
+P0093,Blender,Accessories,11832,16683.12
+P0094,Toaster,Accessories,1651,3169.92
+P0095,Headphones,Accessories,13294,21536.28
+P0096,Webcam,Accessories,14305,19025.65
+P0097,Router,Accessories,545,719.4
+P0098,Tablet,Accessories,8678,12843.44
+P0099,Scanner,Accessories,16933,31495.38
+P0100,Speaker,Accessories,18484,35858.96
